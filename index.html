@@ -61,23 +61,62 @@
                     </tr>
 
                     <tr>
-                        <td>Table Body</td>
-                    </tr>
-
-                    <tr>
                         <td>Table Row</td>
+                        <td>&lt;tr&gt;</td>
+                        <td>The table row container (you create a new table row and then insert table cells through &lt;td&gt;).</td>
                     </tr>
 
                     <tr>
                         <td>Table Data</td>
+                        <td>&lt;td&gt;</td>
+                        <td>Table data is each individual cell which contains the data in your table. These are housed in table rows.</td>
                     </tr>
 
                     <tr>
                         <td>Table Foot</td>
+                        <td>&lt;tfoot&gt;</td>
+                        <td>This is the row containing the table footer, and is often used for a summary row, such as Total.</td>
                     </tr>
-
                  </tbody>    
-                
+            </table>
+
+            <p>You can also use the attributes &lt;colspan&gt; and &lt;rowspan&gt; if you want a table data cell to span multiple columns or rows.
+                For exmaple in the table below, cell C4 has a &lt;colspan="2"&gt;, pushing cell D4 into the E4 position, and cell B1 has a &lt;rowspan = "3"&gt;, so it covers rows 2, 3 and 4.:
+            </p>
+
+            <table>
+                <tr>
+                    <thead>
+                        <td>A</td>
+                        <td>B</td>
+                        <td>C</td>
+                        <td>D</td>
+                    </thead>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td rowspan="3">B1</td>
+                    <td>C1</td>
+                    <td>D1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>B2</td>
+                    <td>C2</td>
+                    <td>D2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>B3</td>
+                    <td>C3</td>
+                    <td>D3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>B4</td>
+                    <td colspan="2">C4</td>
+                    <td>D4</td>
+                </tr>
             </table>
         </section>
 
