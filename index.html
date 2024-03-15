@@ -34,6 +34,21 @@
 
         <section id="doccreation">
             <h2>Document Creation</h2>
+
+            <p>This section highlights the code required at the start of every HTML document. 
+                This code is enclosed in the &lt;head&gt; section of the HTML file and is critical for the browser to correctly read the file.</p>
+        <pre>
+            <code>
+                    <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+                        <link rel="stylesheet" href="style.css">
+                        <title>CSS Cheatsheet</title>
+                    </head>
+             </code>
+         </pre>
+
         </section>
 
         <section id="tables">
@@ -49,37 +64,37 @@
                 <tbody>
                     <tr>
                         <td>Table</td>
-                        <td>&lt;table&gt;</td>
+                        <td id="syntax">&lt;table&gt;</td>
                         <td>This is the opening and closing tag for a table.</td>
                     </tr>
                     
                     <tr>
                         <td>Table Head</td>
-                        <td>&lt;thead&gt;</td>
+                        <td id="syntax">&lt;thead&gt;</td>
                         <td>Together with the &lt;th&gt; tag, you can create a table header that makes the table and data in it easier to read. The &lt;th&gt; acts the same as the &lt;td&gt; tag.</td>
                     </tr>
 
                     <tr>
                         <td>Table Body</td>
-                        <td>&lt;tbody&gt;</td>
+                        <td id="syntax">&lt;tbody&gt;</td>
                         <td>This is where the main portion of your table sits. You use multiple &lt;td&gt; tags to create new cells, and populate with your data.</td>
                     </tr>
 
                     <tr>
                         <td>Table Row</td>
-                        <td>&lt;tr&gt;</td>
+                        <td id="syntax">&lt;tr&gt;</td>
                         <td>The table row container (you create a new table row and then insert table cells through &lt;td&gt;).</td>
                     </tr>
 
                     <tr>
                         <td>Table Data</td>
-                        <td>&lt;td&gt;</td>
+                        <td id="syntax">&lt;td&gt;</td>
                         <td>Table data is each individual cell which contains the data in your table. These are housed in table rows.</td>
                     </tr>
 
                     <tr>
                         <td>Table Foot</td>
-                        <td>&lt;tfoot&gt;</td>
+                        <td id="syntax">&lt;tfoot&gt;</td>
                         <td>This is the row containing the table footer, and is often used for a summary row, such as Total.</td>
                     </tr>
                  </tbody>    
@@ -89,13 +104,13 @@
                 For exmaple in the table below, cell C4 has a &lt;colspan="2"&gt;, pushing cell D4 into the E4 position, and cell B1 has a &lt;rowspan = "3"&gt;, so it covers rows 2, 3 and 4.:
             </p>
 
-            <table>
+            <table id="table2">
                 <tr>
                     <thead>
-                        <td>A</td>
-                        <td>B</td>
-                        <td>C</td>
-                        <td>D</td>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>C</th>
+                        <th>D</th>
                     </thead>
                 </tr>
                 <tr>

@@ -38,9 +38,54 @@ nav li a {
     color: #FFF;
 }
 
+/* Header elements */
+
+h1 {
+
+}
+
+h2 {
+    border-bottom: 1px solid black;
+    display: inline;
+}
+
 /* Main */
 
 main {
     position: relative;
     top: 150px;
+}
+
+/* Codeblocks */
+
+pre code {
+    background-color: #eee;
+    border: 1px solid black;
+    display: block;
+    padding: 20px;
+    width: 50%;
+}
+
+/* Tables */
+
+table {
+    width: 50%;
+}
+
+table th, td {
+    border: 1px solid black;
+}
+
+th {
+    padding: 10px;
+    background-color: #1e6073;
+    color: #FFF;
+}
+
+table #syntax {
+    text-align: center;
+}
+
+#table2 {
+    text-align: center;
 }
