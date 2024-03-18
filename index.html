@@ -39,13 +39,13 @@
                 This code is enclosed in the &lt;head&gt; section of the HTML file and is critical for the browser to correctly read the file.</p>
         <pre>
             <code>
-                    <html lang="en">
-                    <head>
-                        <meta charset="UTF-8">
-                        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-                        <link rel="stylesheet" href="style.css">
-                        <title>CSS Cheatsheet</title>
-                    </head>
+                    &lt;html lang="en"&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        &lt;link rel="stylesheet" href="style.css"&gt;
+                        &lt;title&gt;CSS Cheatsheet&lt;/title&gt;
+                    &lt;/head&gt;
              </code>
          </pre>
 
@@ -100,9 +100,11 @@
                  </tbody>    
             </table>
 
-            <p>You can also use the attributes &lt;colspan&gt; and &lt;rowspan&gt; if you want a table data cell to span multiple columns or rows.
-                For exmaple in the table below, cell C4 has a &lt;colspan="2"&gt;, pushing cell D4 into the E4 position, and cell B1 has a &lt;rowspan = "3"&gt;, so it covers rows 2, 3 and 4.:
-            </p>
+            <p>You can also use the attributes <code>&lt;rowspan&gt;</code> and <code>&lt;colspan&gt;</code> if you want a table data cell to span multiple columns or rows.</p>
+
+            <p>For example in the table below, cell B1 has a <code>&lt;rowspan = "2"&gt;</code> which covers the original B1 and B2 cells. As a result of it taking over cell B2, it has pushed all of the cells on row 2 one position to the right, hence cell D2 looking out of place.</p>
+                
+            <p>Cell C4 has a <code>&lt;colspan="2"&gt;</code>, pushing cell D4 into the E4 position.</p>
 
             <table id="table2">
                 <tr>
@@ -115,7 +117,7 @@
                 </tr>
                 <tr>
                     <td>1</td>
-                    <td rowspan="3">B1</td>
+                    <td id="tablelink1" rowspan="2">B1</td>
                     <td>C1</td>
                     <td>D1</td>
                 </tr>
@@ -123,7 +125,7 @@
                     <td>2</td>
                     <td>B2</td>
                     <td>C2</td>
-                    <td>D2</td>
+                    <td id="tablelink1">D2</td>
                 </tr>
                 <tr>
                     <td>3</td>
@@ -134,8 +136,8 @@
                 <tr>
                     <td>4</td>
                     <td>B4</td>
-                    <td colspan="2">C4</td>
-                    <td>D4</td>
+                    <td id="tablelink2" colspan="2">C4</td>
+                    <td id="tablelink2">D4</td>
                 </tr>
             </table>
         </section>
