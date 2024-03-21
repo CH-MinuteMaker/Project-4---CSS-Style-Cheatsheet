@@ -147,14 +147,63 @@
             <h2>Semantics</h2>
             <p>HTML Semantics is the process of writing your code in such a way that it clearly defines different parts of the code that 'mean' different things.</p>
             <p>For example, each part of this webpage is broken down into 'Sections', with 'Introduction', 'Document Creation', 'Tables' and 'Semantics' all representing different sections.</p>
-            <p>It goes further than this, ensuring that the table has a header and a body. Effectively this prevents the code from relying on <code>div</code> with <code>id's</code> being used throughout the entire code base.
+            <p>It goes further than this, by setting 'headings', 'sections', 'articles', 'asides' and 'footers'. Effectively this prevents the code from relying on <code>div</code> with <code>id's</code> being used throughout the entire code base.
                 It also allows screen readers to more effectively understand the layout of the webpage.</p>
             <p>The image below explains this in more detail:</p>
             <img id="semanticimage" src="/Images/Semantic vs non-semantic.png" alt="Semantic vs non-semantic layout">
-
-
             </p>
+
+            <p>The below represents the basic structure of a semantic document.</p>
+            
+ 
+        <article id="semantic">
+            <h3>Semantic Markup</h3>
+     
+        <pre><code>&lt;html lang="en"&gt;
+    
+        &lt;head&gt;
+            &lt;title&gt;Title&lt;title&gt;
+        &lt;/head&gt;
+
+        &lt;body&gt;
+
+            &lt;header&gt;
+                    Logo, title, navigation
+                &lt;nav&gt;
+                    Primary and secondary menus but ever nest navs
+                &lt;/nav&gt;
+            &lt;/header&gt;
+
+            &lt;section&gt;
+                Related grouping of semantic meaning
+
+                &lt;article&gt;
+                    Self-contained content
+                &lt;/article&gt;
+
+                &lt;article&gt;
+                    Would still make sense if all other content removed
+                        
+                    &lt;aside&gt;
+                        &lt;blockquote&gt;
+                            Related to main but outside the main flow
+                        &lt;/blockquote&gt;
+                    &lt;/aside&gt;
+
+                &lt;/article&gt;
+
+            &lt;/section&gt;
+
+            &lt;footer&gt;
+                Copyright, contact, links
+            &lt;/footer&gt;
+
+        &lt;/body&gt;
+
+    &lt;/html&gt;</pre>
         </section>
+
+    </code>
     </main>
 
     <footer>
