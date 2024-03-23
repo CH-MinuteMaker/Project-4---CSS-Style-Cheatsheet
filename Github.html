@@ -21,19 +21,24 @@
         <main>
         <section>
             <h2>Introduction</h2>
-            <p>Why does this not show on my screen?</p>
+            <p>The below details the Git and Github process around creating and linking new repositories to ensure code is backed up and version control is in place.</p>
         </section>
 
         <section>
             <h2>Github Process Flow</h2>
             <ul>
                 <li>Open VS Code</li>
-                <li><strong>Initialize - </strong>Create new folder structure (this stores it locally) called a <strong>repository</strong>. This is often named <strong>main</strong>.</li>
-                <li><strong>Git add - </strong>stages the newly created file or folder, ready for committing,</li>
+                <li><strong>Git init -b main - </strong>Creates a local <strong>repository</strong>. This is often named <strong>main</strong>.</li>
+                <li><strong>Git add - </strong>stages the newly created file or folder, ready for committing. You can either specify files by name, or use a full-stop to stage all files.</li>
                 <li><strong>Git commit -m "insert message here" - </strong>commits the stagesd file or folder to the repository.</li>
-                <li><strong>Git push - </strong>this 'pushes' the newly committed changes up into the remote repository hosted on Github.</li>
-                
+                <li><strong>Create remote repository - </strong>navigate to Github and create a new repository. Do <strong>not</strong> add README, licence or gitignore files yet to avoid errors. Copy the URL.</li>
+                <li><strong>Change to the desired working directory - </strong>use the <code>ls</code> command followed by <code>cd</code> to determine where you are and the correct place to navigate to.</li>
+                <li><strong>Git remote add origin 'remote URL' - </strong> add the URL from Github here, linking the local repository to the remote repository.</li>
+                <li><strong>Git remote -v - </strong>verify that this has worked using the remote -v command.</li>
+                <li><strong>Git push origin main - </strong>this 'pushes' the newly committed changes up into the remote repository hosted on Github.</li>
+                <li><strong>Git pull - </strong>if you're working on a separate machine, you can open the repository and 'pull' the latest version down from Github to ensure it is up to date.</li>
             </ul>
+            <p>Go here for more details: <a href="https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github" target="_blank">Github instructions</a></p>
         </section>
 
     </main>

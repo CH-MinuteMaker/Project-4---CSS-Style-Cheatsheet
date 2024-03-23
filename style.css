@@ -79,6 +79,10 @@ table {
     width: 50%;
 }
 
+tr:hover {
+    background-color: #8cb5c8;
+}
+
 table th, td {
     border: 1px solid black;
 }
