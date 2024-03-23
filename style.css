@@ -58,6 +58,11 @@ main {
     padding-top: 150px;
 }
 
+section {
+    margin: auto;
+    width: 70%;
+}
+
 /* Codeblocks */
 
 code {
@@ -68,15 +73,15 @@ pre code {
     background-color: #eee;
     border: 1px solid black;
     display: block;
-    padding: 10px;
-    width: 30%;
+    width: 60%;
     white-space: pre-wrap;   
 }
 
 /* Tables */
 
 table {
-    width: 50%;
+    width: 60%;
+    margin: 10px 0px 10px 0px;
 }
 
 tr:hover {
@@ -118,15 +123,30 @@ table #syntax {
 }
 
 
+/* Images on CSS */
+
+#cssimage {
+    display: block;
+    margin: auto;
+    width: 40%;
+    padding-top: 10px;
+}
+
+#boxmodelimage {
+    display: block;
+    margin: auto;
+    width: 60%;
+    padding-top: 10px;
+}
+
 /* Footer */
 
 footer {
     color: #000;
-    border: 1px solid #000;
-    left: 0px;
-    text-align: right;
+    background-color: #f30eec;
+    width: 100%;
+    display: inline-block;
     height: 50px;
     bottom: 0px;
     box-sizing: border-box;
-    padding-right: 5px;
 }

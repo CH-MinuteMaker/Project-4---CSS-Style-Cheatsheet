@@ -18,6 +18,8 @@
             <li><a href="Github.html">Github</a></li>
         </ul>
     </nav>
+
+
 <main>
     <section>
         <h2>Fundamentals of CSS</h2>
@@ -27,7 +29,7 @@
 
     <section>
         <h2>CSS Rules Explained</h2>
-        <img src="Images/css-declaration-small.png" alt="CSS rule breakdown">
+        <img id="cssimage" src="Images/css-declaration-small.png" alt="CSS rule breakdown">
         <ul>
             <li>Selector</li>
                 <ul>
@@ -52,8 +54,32 @@
 
     <section>
         <h2>The Box Model</h2>
+
+        <article>
+            <p>The Box Model is the fundamental principle behind CSS. You can imagine every element on a webpage as a box, with the following properties:</p>
+                <ul>
+                    <li>Content</li>
+                    <li>Padding</li>
+                    <li>Border</li>
+                    <li>Margin</li>
+                </ul>
+            <img id="boxmodelimage" src="Images/boxmodel.png" alt="The Box Model explained">
+            <p>Each property can be amended to increase its height or width, changing the shape and size of the overall box. This then impacts how the element sits
+                within the page, and how it interacts with other elements.
+            </p>
+            <p>Some of the key ways to restructure the Box Model include:</p>
+                <ul>
+                    <li><code>box-sizing: border-box</code> - the total size of the box is based on the border, with the content inside the border-box re-sizing itself to match.</li>
+                    <li><code>box-sizing: content-box</code> - the total size of the box is based on the size of the content + padding + border.</li>
+                </ul>
+        </article>
+
     </section>
 
 </main>
+
+<footer>
+    <p>Insert fancy footer here</p>
+</footer>
 
 </body>

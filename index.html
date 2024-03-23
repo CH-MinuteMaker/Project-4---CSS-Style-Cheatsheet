@@ -22,7 +22,7 @@
     <main>
         <section id="introduction">
             <h2>Introduction</h2>
-            <p>HTML is the basic building block of a webpage, and stands for <span>Hypertext Markup Language</span>. 
+            <p>HyperText Markup Language (HTML) is the basic building block of a webpage, and stands for <span>Hypertext Markup Language</span>. 
                 Whilst a webpage doesn't have any styling, it will render the HTML in a very basic way.</p>
                 <p>Core elements of HTML are listed below and include:</p>
                     <ul>
@@ -30,184 +30,15 @@
                         <li>Tables</li>
                         <li>Semantics</li>
                     </ul>
-
+            <p>CSS stands for Cascading Style Sheets and is used to style a very basic webpage, adding colour, positioning and emphasis throughout.</p>
+            <p>Git and Github are version control systems that enable code to be tracked, backed up and shared between multiple people to enable team working on the same application.</p>
         </section>
 
-        <section id="doccreation">
-            <h2>Document Creation</h2>
-
-            <p>This section highlights the code required at the start of every HTML document. 
-                This code is enclosed in the &lt;head&gt; section of the HTML file and is critical for the browser to correctly read the file.</p>
-        <pre>
-            <code>
-                    &lt;html lang="en"&gt;
-                    &lt;head&gt;
-                        &lt;meta charset="UTF-8"&gt;
-                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-                        &lt;link rel="stylesheet" href="style.css"&gt;
-                        &lt;title&gt;CSS Cheatsheet&lt;/title&gt;
-                    &lt;/head&gt;
-             </code>
-         </pre>
-
-        </section>
-
-        <section id="tables">
-            <h2>Tables</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Tag Name</th>
-                        <th>Syntax</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Table</td>
-                        <td id="syntax">&lt;table&gt;</td>
-                        <td>This is the opening and closing tag for a table.</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Table Head</td>
-                        <td id="syntax">&lt;thead&gt;</td>
-                        <td>Together with the &lt;th&gt; tag, you can create a table header that makes the table and data in it easier to read. The &lt;th&gt; acts the same as the &lt;td&gt; tag.</td>
-                    </tr>
-
-                    <tr>
-                        <td>Table Body</td>
-                        <td id="syntax">&lt;tbody&gt;</td>
-                        <td>This is where the main portion of your table sits. You use multiple &lt;td&gt; tags to create new cells, and populate with your data.</td>
-                    </tr>
-
-                    <tr>
-                        <td>Table Row</td>
-                        <td id="syntax">&lt;tr&gt;</td>
-                        <td>The table row container (you create a new table row and then insert table cells through &lt;td&gt;).</td>
-                    </tr>
-
-                    <tr>
-                        <td>Table Data</td>
-                        <td id="syntax">&lt;td&gt;</td>
-                        <td>Table data is each individual cell which contains the data in your table. These are housed in table rows.</td>
-                    </tr>
-
-                    <tr>
-                        <td>Table Foot</td>
-                        <td id="syntax">&lt;tfoot&gt;</td>
-                        <td>This is the row containing the table footer, and is often used for a summary row, such as Total.</td>
-                    </tr>
-                 </tbody>    
-            </table>
-
-            <p>You can also use the attributes <code>&lt;rowspan&gt;</code> and <code>&lt;colspan&gt;</code> if you want a table data cell to span multiple columns or rows.</p>
-
-            <p>For example in the table below, cell B1 has a <code>&lt;rowspan = "2"&gt;</code> which covers the original B1 and B2 cells. As a result of it taking over cell B2, it has pushed all of the cells on row 2 one position to the right, hence cell D2 looking out of place.</p>
-                
-            <p>Cell C4 has a <code>&lt;colspan="2"&gt;</code>, pushing cell D4 into the E4 position.</p>
-
-            <table id="table2">
-                <tr>
-                    <thead>
-                        <th>A</th>
-                        <th>B</th>
-                        <th>C</th>
-                        <th>D</th>
-                    </thead>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td id="tablelink1" rowspan="2">B1</td>
-                    <td>C1</td>
-                    <td>D1</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>B2</td>
-                    <td>C2</td>
-                    <td id="tablelink1">D2</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>B3</td>
-                    <td>C3</td>
-                    <td>D3</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>B4</td>
-                    <td id="tablelink2" colspan="2">C4</td>
-                    <td id="tablelink2">D4</td>
-                </tr>
-            </table>
-        </section>
-
-        <section id="semantics">
-            <h2>Semantics</h2>
-            <p>HTML Semantics is the process of writing your code in such a way that it clearly defines different parts of the code that 'mean' different things.</p>
-            <p>For example, each part of this webpage is broken down into 'Sections', with 'Introduction', 'Document Creation', 'Tables' and 'Semantics' all representing different sections.</p>
-            <p>It goes further than this, by setting 'headings', 'sections', 'articles', 'asides' and 'footers'. Effectively this prevents the code from relying on <code>div</code> with <code>id's</code> being used throughout the entire code base.
-                It also allows screen readers to more effectively understand the layout of the webpage.</p>
-            <p>The image below explains this in more detail:</p>
-            <img id="semanticimage" src="/Images/Semantic vs non-semantic.png" alt="Semantic vs non-semantic layout">
-            </p>
-
-            <p>The below represents the basic structure of a semantic document.</p>
-            
- 
-        <article id="semantic">
-            <h3>Semantic Markup</h3>
-     
-        <pre><code>&lt;html lang="en"&gt;
-    
-        &lt;head&gt;
-            &lt;title&gt;Title&lt;title&gt;
-        &lt;/head&gt;
-
-        &lt;body&gt;
-
-            &lt;header&gt;
-                    Logo, title, navigation
-                &lt;nav&gt;
-                    Primary and secondary menus but ever nest navs
-                &lt;/nav&gt;
-            &lt;/header&gt;
-
-            &lt;section&gt;
-                Related grouping of semantic meaning
-
-                &lt;article&gt;
-                    Self-contained content
-                &lt;/article&gt;
-
-                &lt;article&gt;
-                    Would still make sense if all other content removed
-                        
-                    &lt;aside&gt;
-                        &lt;blockquote&gt;
-                            Related to main but outside the main flow
-                        &lt;/blockquote&gt;
-                    &lt;/aside&gt;
-
-                &lt;/article&gt;
-
-            &lt;/section&gt;
-
-            &lt;footer&gt;
-                Copyright, contact, links
-            &lt;/footer&gt;
-
-        &lt;/body&gt;
-
-    &lt;/html&gt;</pre>
-        </section>
-
-    </code>
+        
     </main>
 
     <footer>
-        <p>This website is a work in progress, and is designed to serve as a reminder to the key principles I know at the moment!</p>
+        <p>Insert fancy footer here</p>
     </footer>
 </body>
 </html>
