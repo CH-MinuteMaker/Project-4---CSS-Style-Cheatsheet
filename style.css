@@ -63,6 +63,11 @@ section {
     width: 70%;
 }
 
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
 /* Codeblocks */
 
 code {
